@@ -1,0 +1,138 @@
+<link rel="stylesheet" href="styles.css">
+<script src="script.js" defer></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Amiri:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+
+
+    <!-- Floating Hearts -->
+    <div class="hearts-container" id="heartsContainer"></div>
+
+    <!-- Falling Petals -->
+    <div class="petals-container" id="petalsContainer"></div>
+
+    <!-- Sparkles -->
+    <div id="sparklesContainer"></div>
+
+    <!-- Header -->
+    <header class="header">
+        <h1>
+            <span class="pulse-heart">❤️</span>
+            <span>✨</span>
+            رسالة حب
+            <span>✨</span>
+            <span class="pulse-heart">❤️</span>
+        </h1>
+        <p>♡ من القلب إلى القلب ♡</p>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-container">
+        <!-- Envelope -->
+        <div class="envelope-wrapper" id="envelopeWrapper" onclick="openEnvelope()">
+            <div class="envelope">
+                <!-- Envelope Body -->
+                <div class="envelope-body">
+                    <!-- Fold lines -->
+                    <div class="envelope-fold">
+                        <svg viewBox="0 0 100 50" preserveAspectRatio="none">
+                            <path d="M0,0 L50,45 L100,0" fill="none" stroke="rgba(166, 124, 82, 0.4)" stroke-width="0.8"/>
+                        </svg>
+                    </div>
+                    <!-- Small hearts -->
+                    <span class="envelope-hearts" style="bottom: 15px; left: 20px;">♡</span>
+                    <span class="envelope-hearts" style="bottom: 25px; right: 30px; font-size: 0.8rem;">♡</span>
+                    <span class="envelope-hearts" style="bottom: 35px; left: 50px; font-size: 0.7rem;">♡</span>
+                </div>
+
+                <!-- Envelope Flap -->
+                <div class="envelope-flap"></div>
+
+                <!-- Heart Seal -->
+                <div class="heart-seal">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Click Text -->
+            <div class="click-text">
+                <p>
+                    <span class="pulse-heart">💕</span>
+                    اضغط لفتح الظرف
+                    <span class="pulse-heart">💕</span>
+                </p>
+                <p class="subtitle">رسالة خاصة تنتظرك</p>
+            </div>
+        </div>
+
+        <!-- Letter -->
+        <div class="letter-container" id="letterContainer">
+            <div class="opened-badge">
+                <span>✨</span>
+                تم فتح الظرف
+                <span>✨</span>
+            </div>
+
+            <div class="letter-paper">
+                <!-- Corner decorations -->
+                <span class="corner-decor top-left">❧</span>
+                <span class="corner-decor top-right">❧</span>
+                <span class="corner-decor bottom-left">❧</span>
+                <span class="corner-decor bottom-right">❧</span>
+
+                <!-- Letter Content -->
+                <div class="letter-date">✦ رسالة من القلب ✦</div>
+
+                <div class="letter-greeting">إلى من يسكن قلبي...</div>
+
+                <div class="letter-body">
+                    <p>حبيبي الغالي،</p>
+                    
+                    <p class="indented">
+                        كل كلمات العالم لا تكفي لأخبرك كم أحبك. أنت النور الذي يضيء حياتي، 
+                        والسبب الذي يجعل كل يوم جميلاً. معك، كل لحظة تصبح ذكرى ثمينة 
+                        أحتفظ بها في قلبي للأبد.
+                    </p>
+
+                    <p class="indented">
+                        في كل صباح أستيقظ وأنت أول ما أفكر فيه، وفي كل ليلة أنام وأنت 
+                        آخر من أتذكره. حبك هو أجمل شيء حدث لي في هذه الحياة.
+                    </p>
+
+                    <p class="indented">
+                        أريدك أن تعرف أنني سأكون دائماً بجانبك، في الأوقات الجميلة 
+                        والصعبة. أنت لست مجرد حب، أنت نصفي الآخر، روحي، وكل شيء.
+                    </p>
+
+                    <p class="letter-center">
+                        <span class="pulse-heart">❤️</span>
+                        أحبك من كل قلبي
+                        <span class="pulse-heart">❤️</span>
+                    </p>
+                </div>
+
+                <div class="letter-signature">
+                    <p class="closing">بكل الحب والإخلاص،</p>
+                    <p class="name">❤ من يحبك أكثر من نفسه ❤</p>
+                </div>
+
+                <div class="letter-footer">✿ ♡ ✿</div>
+            </div>
+
+            <button class="close-btn" onclick="closeEnvelope()">
+                <span>إغلاق الظرف</span>
+                <span>✉️</span>
+            </button>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>
+            <span class="pulse-heart">❤</span>
+            صُنع بكل الحب
+            <span class="pulse-heart">❤</span>
+        </p>
+    </footer>
